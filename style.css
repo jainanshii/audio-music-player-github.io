@@ -1,0 +1,104 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,900&display=swap');
+
+body{
+    display:flex;
+    flex-flow:column wrap;
+    align-items: center;
+    justify-content:center;
+   background-color: rgba(0, 0, 0, 0.993);
+   height:100%;
+   box-shadow: -5px -5px 10px rgb(245, 245, 245);
+}
+
+  .box{
+    width: 255px;
+    height:253px;
+    box-shadow: -5px -5px 10px rgba(31, 202, 254, 0.442);
+    background:linear-gradient(rgba(0, 0, 255, 0.788),rgba(0, 128, 0, 0.788),rgba(255, 0, 0, 0.788),rgba(255, 255, 0, 0.788));
+    
+  }
+  #dance1{
+    width:300px;
+    height: 300px;
+    display:none;
+    position:absolute;
+   
+   animation: rotate 20s infinite ease-in-out;
+  }
+  #dance{
+    width:300px;
+    height: 300px;
+    display:none;
+   border-radius: 30px;
+   position:absolute;
+   
+   animation: rotate1 20s infinite ease-in-out;
+  }
+  #img1{
+    width:250px;
+    height:250px;
+   
+  }
+ 
+  .container{
+   
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-flow:column wrap;
+
+    height:50vw;
+  }
+  button{
+    height:30px;
+    width:50px;
+  }
+  button:hover{
+    background-color: rgba(255, 127, 80, 0.567);
+  }
+ 
+  @keyframes rotate {
+    0%{
+       left:50px;
+       top:250px;
+    }
+    50%{
+        left:1050px;
+        top:250px;
+    }
+    75%{
+        left:600px;
+        top:3px;
+    }
+    100%{
+        left:600px;
+        top:400px;
+    }
+  }
+  @keyframes rotate1 {
+    0%{
+       left:1000px;
+       top:250px;
+    }
+    50%{
+        left:50px;
+        top:250px;
+    }
+    75%{
+        left:600px;
+        top:400px;
+    }
+    100%{
+        left:600px;
+        top:3px;
+        
+    }
+  }
+ 
+  #box-2{
+    color:white;
+    font-size:25px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
